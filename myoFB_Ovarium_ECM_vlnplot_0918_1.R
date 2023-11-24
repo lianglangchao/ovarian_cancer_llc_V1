@@ -1,4 +1,3 @@
-setwd("/dellfsqd2/ST_LBI/USER/chaichaochao/Graduation/02_data_plot/03_harmony_V2/02_annotation/03_Fibro/")
 
 library(Seurat)
 library(ggplot2)
