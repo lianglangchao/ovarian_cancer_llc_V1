@@ -5,8 +5,8 @@ import scanpy as sc
 from cnmf import cNMF
 import anndata as ad
 
-os.chdir('/dellfsqd2/ST_LBI/USER/chaichaochao/Graduation/02_data_plot/03_harmony_V2/02_annotation/02_EpiCell/06_cNMF/')
-adata = sc.read_h5ad('../All_EPI_0313.h5ad')
+
+adata = sc.read_h5ad('All_EPI_0313.h5ad')
 adata.var['mt'] = adata.var_names.str.startswith('MT-')
 notMT= adata.var['mt'][adata.var['mt']==False]
 adata = adata[:, notMT.index]
